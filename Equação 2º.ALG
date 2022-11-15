@@ -1,0 +1,43 @@
+Algoritmo "Bhaskara"
+//
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 15/11/2022
+//
+Var
+   // Seção de Declarações das variáveis
+   a, b, c: inteiro
+   delta, x1, x2: real
+
+Inicio
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+   escreval ("CALCULADORA DE EQUAÇÃO DO SEGUNDO GRAU")
+   escreval ("Digite o valor de A:")
+   leia (a)
+
+   escreval ("Digite o valor de B:")
+   leia (b)
+
+   escreval ("Digite o valor de C:")
+   leia (c)
+
+   escreval ("Sua equação é: ", a, "x2 +", b, "x +", c, " = 0")
+
+   delta <- (-b^2) - (4 * a*c)
+   escreval ("Valor de delta: ", delta: 4:2)
+
+   se (delta = 0) entao
+      x1 <- (-b + RaizQ(delta)) / (2*a)
+      escreval ("Para delta 0, temos duas raízes iguais a ", x1)
+
+   senao
+      x1 <- (-b + RaizQ(delta)) / (2*a)
+      x2 <- (-b - RaizQ(delta)) / (2*a)
+      escreval ("Para delta positivo temos raízes diferentes")
+
+      escreval ("O valor de x1 é: ", x1)
+      escreval ("O valor de x2 é: ", x2)
+
+   fimse
+
+Fimalgoritmo
